@@ -2,6 +2,14 @@
 ## Stardard usage
  - HTTP protocol
 <hr>
+
+#### PHP uploaled reverse shell
+  - If the site is php based, and allow upload file and fetch file afterward, it is possible to perform the exploit.
+  - Step:
+    - Upload the reverse shell file, like (rshell.php)
+    - Access the file by direct url, like /uploads/rshell.php
+    - The reverse shell is created by RCE
+
 #### PHP strcmp Bypass
 - #### Description
   - if strcmp used in authentication by php, it is possible to bypass by this tecque.
