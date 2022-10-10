@@ -1,0 +1,9 @@
+[submodule "submodule/RsaCtfTool"]
+	path = submodule/RsaCtfTool
+	url = https://github.com/RsaCtfTool/RsaCtfTool
+[submodule "submodule/wappalyzer"]
+	path = submodule/wappalyzer
+	url = https://github.com/wappalyzer/wappalyzer
+[submodule "submodule/jwt_tool"]
+	path = submodule/jwt_tool
+	url = https://github.com/ticarpi/jwt_tool
