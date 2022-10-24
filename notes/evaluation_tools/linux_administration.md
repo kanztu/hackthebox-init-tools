@@ -40,3 +40,8 @@
         gcc -fPIC -shared -o /tmp/pe.so pe.c -nostartfiles # Complie
         sudo LD_PRELOAD=/tmp/pe.so <COMMAND>
         ```
+### With Docker
+- ###
+    ```bash
+    docker run -v /:/mnt --rm -it alpine chroot /mnt sh
+    ```

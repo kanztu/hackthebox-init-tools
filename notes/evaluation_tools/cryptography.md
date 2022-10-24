@@ -2,8 +2,9 @@
 - #### John the ripper
   - md5
   ```bash
-  john --format=raw-md5 --wordlist=/usr/share/wordlists/rockyou.txt hash.txts
+  john --format=raw-md5 --wordlist=/usr/share/wordlists/rockyou.txt hash.txt
   ```
+- #### hashcat
 - #### https://crackstation.net/
     -  Weak hash cracking
 
@@ -18,3 +19,18 @@
     - https://github.com/aalex954/jwt-key-confusion-poc
     - If server support both RS and HS to verify the JWT, it is possible to perform exploit.
     - PoC: Tempering the token from RSXXX to HSXXX, and sign the payload with pubkey. Then, server will use systematic method to verify the message (i.e. by public key). Consequently, the auth is successful.
+
+### RSA
+  - Concept
+    - `BEGIN RSA PUBLIC KEY` is PKCS#1
+    - `BEGIN PUBLIC KEY` is PKCS#8
+  - Factor q and p with factordb
+    - http://factordb.com/
+  - To convert from PKCS#8 to PKCS#1
+    - `openssl rsa -pubin -in <filename> -RSAPublicKey_out`
+  - To convert from PKCS#1 to PKCS#8:
+    - `openssl rsa -RSAPublicKey_in -in <filename> -pubout`
+  - RSACtfTool
+    - Source: https://github.com/RsaCtfTool/RsaCtfTool
+    - Description: RSA multi attacks tool : uncipher data from weak public key and try to recover private key Automatic selection of best attack for the given public key
+    - Usage: https://github.com/RsaCtfTool/RsaCtfTool#usage

@@ -7,7 +7,8 @@
 - #### wfuzz  - Soruce: https://github.com/xmendez/wfuzz
   - Finding subdomain, path, etc.
   - Usage:
-    ```bash    wfuzz -c -f sub-fighter -w subdomains-top1million-5000.txt -u 'http://thetoppers.htb' -H "Host: FUZZ.thetoppers.htb" --hw 1036 # hw for negative for payload in size
+    ```bash    
+    wfuzz -c -f sub-fighter -w /opt/useful/SecLists/Discovery/DNS/bitquark-subdomains-top100000.txt -u 'http://thetoppers.htb' -H "Host: FUZZ.thetoppers.htb" --hw 1036 # hw for negative for payload in size
     ```
  - #### gobuster
    - Source: https://github.com/OJ/gobuster
