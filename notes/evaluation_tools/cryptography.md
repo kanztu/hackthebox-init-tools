@@ -24,12 +24,15 @@
   - Concept
     - `BEGIN RSA PUBLIC KEY` is PKCS#1
     - `BEGIN PUBLIC KEY` is PKCS#8
+    - https://www.tutorialspoint.com/cryptography_with_python/cryptography_with_python_understanding_rsa_algorithm.htm
   - Factor q and p with factordb
     - http://factordb.com/
   - To convert from PKCS#8 to PKCS#1
     - `openssl rsa -pubin -in <filename> -RSAPublicKey_out`
   - To convert from PKCS#1 to PKCS#8:
     - `openssl rsa -RSAPublicKey_in -in <filename> -pubout`
+  - Check n and e
+    - `openssl rsa -pubin -inform PEM -text -noout --modulus < pubkey.pem`
   - RSACtfTool
     - Source: https://github.com/RsaCtfTool/RsaCtfTool
     - Description: RSA multi attacks tool : uncipher data from weak public key and try to recover private key Automatic selection of best attack for the given public key

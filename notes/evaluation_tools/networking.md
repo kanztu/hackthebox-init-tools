@@ -14,3 +14,8 @@
     ```bash
     nc -lvnp 4444
     ```
+
+### Wireshark
+    - Reading whole scenario in human-readable format
+        - Follow TCP Stream
+        - Follow HTTP Stream

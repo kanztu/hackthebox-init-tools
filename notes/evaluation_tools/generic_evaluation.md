@@ -58,3 +58,5 @@
     ```bash
     nmap -p ${port} -script vuln -oA ${output-file} ${targetip}
     ```
+### Encoder and Decoder
+- #### https://gchq.github.io/CyberChef/

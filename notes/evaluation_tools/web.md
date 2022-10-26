@@ -26,4 +26,4 @@
     ```
 
 ### Further exploitation
-  - [Port 80 exploitaion](../port/80-tcp-http.md) 
+  - [Port 80 exploitaion](../port/80-tcp-http.md)
