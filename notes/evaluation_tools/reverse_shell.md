@@ -35,4 +35,5 @@
 - #### Check list
     ```bash
     cat /etc/passwd
+    find / -group www-data 2>/dev/null | grep -v '/proc/'
     ```
