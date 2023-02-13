@@ -32,6 +32,11 @@
     sqlmap ${curl_param} -D db_name -T tb_name –dump
     ```
 
+    - Combine usage with burp
+        - Copy repeater request as req.map
+        ```bash
+        sqlmap -r sql.map -p total_service --batch
+        ```
 ### SQL inject query
 - Resource: https://book.hacktricks.xyz/pentesting-web/sql-injection
 - Union-basd

@@ -5,7 +5,7 @@
 
 ### Brute force
 - #### wfuzz  - Soruce: https://github.com/xmendez/wfuzz
-  - Finding subdomain, path, etc.
+  - Finding subdomain, path, etc. vhost
   - Usage:
     ```bash    
     wfuzz -c -f sub-fighter -w /opt/useful/SecLists/Discovery/DNS/bitquark-subdomains-top100000.txt -u 'http://thetoppers.htb' -H "Host: FUZZ.thetoppers.htb" --hw 1036 # hw for negative for payload in size
@@ -15,8 +15,14 @@
    - Finding subdomain, path, etc.
   - Usage:
     ```bash
-    gobuster dir -t 100 -x php,txt -w /usr/share/wordlists/dirb/big.txt -u http://10.10.10.10:8080/"
+    gobuster dir -t 100 -x php,txt -w /usr/share/wordlists/dirb/big.txt -u http://10.10.10.10:8080/
+    gobuster vhost  -w /opt/useful/SecLists/Discovery/DNS/bitquark-subdomains-top100000.txt -u carpediem.htb
     ```
+  - #### feroxbuster
+    - Usage:
+      ```bash
+      feroxbuster -w /usr/share/wordlists/dirb/big.txt -u http://goodgames.htb
+      ```
 ### Scaning frameware (offline)
  - #### wappalyzer
    - Source: https://github.com/wappalyzer/wappalyzer

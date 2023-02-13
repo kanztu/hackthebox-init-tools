@@ -4,6 +4,11 @@
   ```bash
   john --format=raw-md5 --wordlist=/usr/share/wordlists/rockyou.txt hash.txt
   ```
+  - PGP
+  ```bash
+  gpg2john key > gpg.john
+  john -w=/usr/share/wordlists/rockyou.txt gpg.john 
+  ```
 - #### hashcat
 - #### https://crackstation.net/
     -  Weak hash cracking

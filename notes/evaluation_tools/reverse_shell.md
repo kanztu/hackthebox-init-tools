@@ -34,6 +34,6 @@
 
 - #### Check list
     ```bash
-    cat /etc/passwd
+    cat /etc/passwd | grep sh
     find / -group www-data 2>/dev/null | grep -v '/proc/'
     ```
