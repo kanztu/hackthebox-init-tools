@@ -19,6 +19,8 @@ pip3 install factordb-python
 wget http://downloads.volatilityfoundation.org/releases/2.6/volatility_2.6_lin64_standalone.zip -O ~/.local/bin/volatility
 chmod +x ~/.local/bin/volatility
 
+#
+sudo apt install feroxbuster -y
 # Install mono
 sudo apt install dirmngr gnupg apt-transport-https ca-certificates software-properties-common -y
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
