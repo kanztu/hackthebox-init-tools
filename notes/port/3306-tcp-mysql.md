@@ -2,7 +2,6 @@
 ## Stardard usage
  - MySQL
 <hr>
-10.129.228.56k
 ### Automatic tools for sql injection
 #### sqlmap
 -  for http endpoint api query
